@@ -29,7 +29,7 @@ function JobBoard(props) {
 
         const itemsForPage = await Promise.all(
             itemIdsForPage.map((itemId) => {
-                fetch(`${props.API_ENDPOINT}/item/${itemId}`).then(res => res.json());
+                fetch(`${props.API_ENDPOINT}/item/${itemId}.json`).then(res => res.json());
             })
         )
         setItems([...items, ...itemsForPage]);
