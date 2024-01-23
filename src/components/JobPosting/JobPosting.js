@@ -9,7 +9,7 @@ function JobPosting({url , title,by , time}) {
             <a className={url ? styles.a : styles.inactiveLink} 
             href={url}
             rel='noopener'
-            >{title}3534</a>
+            >{title}</a>
         </h2>
         <span className={styles.post__metadata}>By {by} - {formattedTime}</span>
     </div>
